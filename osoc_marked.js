@@ -5,6 +5,7 @@
  * 项目网址: 
  *     https://github.com/osoc/osoc_marked.js
  *     http://www.osoc.org
+ * 版本：v0.3.6-osoc-p1
  * 最近修改日期:
  *     2017-08-07
  * 编辑:
