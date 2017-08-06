@@ -3,8 +3,8 @@
  *     osoc_marked.js是一个能把markdown文档转换成html代码的javascript解码器。
  *     本项目基于https://github.com/chjj/marked修改；
  * 项目网址: 
- *     https://github.com/osoc/osoc_marked.js
  *     http://www.osoc.org
+ *     https://github.com/osoc/osoc_marked.js
  * 版本：v0.3.6-osoc-p1
  * 最近修改日期:
  *     2017-08-07
