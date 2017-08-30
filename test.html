@@ -61,6 +61,14 @@
 #### AutoID test 10
 ##### AutoID test 11
 ###### AutoID test 12
+# 下面内容，chjj/marked 会出现id相同的错误！
+# 关键的来了
+## 这里的id容易出错
+### 还有这里
+#### osoc_marked.js则直接将自动添加的ID简化为四个16进制数，
+##### 0x0001-0xFFFF，
+###### 这个数量，对于一般的页面应该是用不完了。
+
 </textarea>
 <script src='./osoc_marked.js'></script>
 <script type="text/javascript">
