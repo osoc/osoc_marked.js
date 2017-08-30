@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang='zh-CN'>
+<head>
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+<title>osoc_marked.js测试</title>
+</head>
+<body>
+<textarea>
+
+# osoc_marked.js测试
+
+----
+
+## markdown 代码
+
+```
+# 自动添加ID测试 01
+## 自动添加ID测试 02
+### 自动添加ID测试 03
+#### 自动添加ID测试 04
+##### 自动添加ID测试 05
+###### 自动添加ID测试 06
+# AutoID test 07
+## AutoID test 08
+### AutoID test 09
+#### AutoID test 10
+##### AutoID test 11
+###### AutoID test 12
+```
+
+## 输出的html代码
+
+```
+<h1 id="0001">自动添加ID测试 01</h1>
+<h2 id="0002">自动添加ID测试 02</h2>
+<h3 id="0003">自动添加ID测试 03</h3>
+<h4 id="0004">自动添加ID测试 04</h4>
+<h5 id="0005">自动添加ID测试 05</h5>
+<h6 id="0006">自动添加ID测试 06</h6>
+<h1 id="0007">AutoID test 07</h1>
+<h2 id="0008">AutoID test 08</h2>
+<h3 id="0009">AutoID test 09</h3>
+<h4 id="000A">AutoID test 10</h4>
+<h5 id="000B">AutoID test 11</h5>
+<h6 id="000C">AutoID test 12</h6>
+```
+
+## 实际效果：
+
+----
+
+# 自动添加ID测试 01
+## 自动添加ID测试 02
+### 自动添加ID测试 03
+#### 自动添加ID测试 04
+##### 自动添加ID测试 05
+###### 自动添加ID测试 06
+# AutoID test 07
+## AutoID test 08
+### AutoID test 09
+#### AutoID test 10
+##### AutoID test 11
+###### AutoID test 12
+</textarea>
+<script src='./osoc_marked.js'></script>
+<script type="text/javascript">
+var obj_md = document.getElementsByTagName('textarea')[0];
+var md = obj_md.textContent;
+var html = marked(md);
+document.body.innerHTML = html;
+</script>
+</body>
+</html>
